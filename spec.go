@@ -20,9 +20,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/go-openapi/analysis"
-	"github.com/go-openapi/spec"
 	"github.com/go-openapi/swag"
+	"github.com/protodev-site/analysis"
+	"github.com/protodev-site/spec"
 )
 
 func init() {

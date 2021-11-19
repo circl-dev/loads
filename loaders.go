@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/url"
 
-	"github.com/go-openapi/spec"
 	"github.com/go-openapi/swag"
+	"github.com/protodev-site/spec"
 )
 
 var (
@@ -35,7 +35,7 @@ func init() {
 		},
 	})
 
-	// sets the global default loader for go-openapi/spec
+	// sets the global default loader for protodev-site/spec
 	spec.PathLoader = loaders.Load
 }
 
@@ -118,7 +118,7 @@ func JSONDoc(path string) (json.RawMessage, error) {
 // This sets the configuration at the package level.
 //
 // NOTE:
-//  * this updates the default loader used by github.com/go-openapi/spec
+//  * this updates the default loader used by github.com/protodev-site/spec
 //  * since this sets package level globals, you shouln't call this concurrently
 //
 func AddLoader(predicate DocMatcher, load DocLoader) {
@@ -129,6 +129,6 @@ func AddLoader(predicate DocMatcher, load DocLoader) {
 		},
 	})
 
-	// sets the global default loader for go-openapi/spec
+	// sets the global default loader for protodev-site/spec
 	spec.PathLoader = loaders.Load
 }

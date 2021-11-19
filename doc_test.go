@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/go-openapi/loads"
 	"github.com/go-openapi/swag"
+	"github.com/protodev-site/loads"
 )
 
 func ExampleSpec() {
