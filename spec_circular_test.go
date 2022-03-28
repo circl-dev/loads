@@ -3,9 +3,9 @@ package loads_test
 import (
 	"testing"
 
+	"github.com/circl-dev/loads"
+	"github.com/circl-dev/validate"
 	"github.com/go-openapi/strfmt"
-	"github.com/protodev-site/loads"
-	"github.com/protodev-site/validate"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
